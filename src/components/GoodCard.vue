@@ -7,7 +7,7 @@
     <div class="good-info">
       <div class="good-text">
         <!-- 标签 -->
-        <span class="good-tag">标签</span>
+        <Label text="标签" />
         商品名称-商品名称扩写，文字超出范围
       </div>
     </div>
@@ -20,6 +20,7 @@
 </template>
 
 <script setup lang='ts'>
+import Label from './Label.vue'
 </script>
 
 <style lang='scss' scoped>
@@ -44,9 +45,6 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       font-size: 30rpx;
-      .good-tag{
-        color: red;
-      }
     }
   }
   .good-price{

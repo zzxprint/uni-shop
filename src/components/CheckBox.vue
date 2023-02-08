@@ -1,6 +1,6 @@
 <template>
   <div class="check-box" :class="{ 'selected': modelValue }" @click="toggle">
-    <Icon v-show="modelValue" icon="tick" size="30rpx" color="#fff" />
+    <Icon v-show="modelValue" icon="tick" size="28rpx" color="#fff" />
   </div>
 </template>
 
