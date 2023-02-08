@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 const props = defineProps({
   icon: {
     type: String,
@@ -26,6 +26,6 @@ const props = defineProps({
 })
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 
 </style>

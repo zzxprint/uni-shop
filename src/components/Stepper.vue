@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 import { computed } from 'vue'
 const props = defineProps(['modelValue'])
 const emit = defineEmits(['update:modelValue'])
@@ -33,7 +33,7 @@ const plusValue = () => {
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .stepper{
   display: flex;
   align-items: center;

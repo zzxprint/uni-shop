@@ -4,11 +4,11 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 const props = defineProps(['text'])
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .label{
   display: inline-flex;
   padding: 0 4rpx;

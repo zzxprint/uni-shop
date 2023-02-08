@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 import Icon from './Icon.vue'
 const props = defineProps({
   text: String,
@@ -25,7 +25,7 @@ const props = defineProps({
 })
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .class-button{
   display: flex;
   flex-direction: column;

@@ -16,11 +16,11 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 import CheckBox from '@/components/CheckBox.vue'
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .submit-bar{
   position: fixed;
   bottom: 0;

@@ -15,11 +15,11 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 import ClassificationButton from '@/components/ClassificationButton.vue'
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .class-bar{
   margin-top: 20rpx;
   padding: 0 30rpx;

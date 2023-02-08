@@ -19,11 +19,11 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 import Label from './Label.vue'
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .good-card{
   height: auto;
   width: 330rpx;

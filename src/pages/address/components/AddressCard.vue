@@ -11,11 +11,11 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .address-card{
   display: flex;
   align-items: center;

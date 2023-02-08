@@ -5,11 +5,11 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 import Icon from '@/components/Icon.vue'
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .search-input{
   position: relative;
   display: flex;

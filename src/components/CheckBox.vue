@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 import Icon from './Icon.vue'
 const props = defineProps({
   modelValue: {
@@ -21,7 +21,7 @@ const toggle = () => {
 }
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .check-box{
   display: flex;
   align-items: center;

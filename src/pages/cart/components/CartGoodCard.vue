@@ -25,7 +25,7 @@
   </div>
 </template>
 
-<script setup lang='ts'>
+<script setup lang="ts">
 import CheckBox from '@/components/CheckBox.vue'
 import Label from '@/components/Label.vue'
 import Stepper from '@/components/Stepper.vue'
@@ -35,7 +35,7 @@ const count = ref(2)
 const select = ref(false)
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 .cart-good-card{
   display: flex;
   align-items: center;
