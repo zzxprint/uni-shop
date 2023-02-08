@@ -10,7 +10,7 @@
     <div class="good-info">
       <div class="good-text">
         <!-- 标签 -->
-        <Label text="标签" />
+        <Tag text="标签" />
         商品名称-商品名称扩写，文字超出范围怎么显示
       </div>
       <!-- 商品价格及数量 -->
@@ -27,7 +27,7 @@
 
 <script setup lang="ts">
 import CheckBox from '@/components/CheckBox.vue'
-import Label from '@/components/Label.vue'
+import Tag from '@/components/Tag.vue'
 import Stepper from '@/components/Stepper.vue'
 import { ref } from 'vue'
 

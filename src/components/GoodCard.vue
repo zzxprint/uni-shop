@@ -7,7 +7,7 @@
     <div class="good-info">
       <div class="good-text">
         <!-- 标签 -->
-        <Label text="标签" />
+        <Tag text="标签" />
         商品名称-商品名称扩写，文字超出范围
       </div>
     </div>
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import Label from './Label.vue'
+import Tag from './Tag.vue'
 </script>
 
 <style lang="scss" scoped>
