@@ -1,0 +1,128 @@
+{
+  "id": "1372881",
+  "name": "shopStore",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7404519",
+      "name": "勾",
+      "font_class": "tick",
+      "unicode": "e786",
+      "unicode_decimal": 59270
+    },
+    {
+      "icon_id": "5460560",
+      "name": "客服",
+      "font_class": "service",
+      "unicode": "ec2e",
+      "unicode_decimal": 60462
+    },
+    {
+      "icon_id": "91804",
+      "name": "待收货",
+      "font_class": "car",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "19494249",
+      "name": "售后",
+      "font_class": "refund",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "19494213",
+      "name": "待付款",
+      "font_class": "wallet",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "13495274",
+      "name": "地址",
+      "font_class": "position",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "900063",
+      "name": "个人信息",
+      "font_class": "person",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "2892820",
+      "name": "订单",
+      "font_class": "order",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "6677877",
+      "name": "已完成",
+      "font_class": "finish-order",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "9964359",
+      "name": "设置",
+      "font_class": "setting",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "5831311",
+      "name": "加",
+      "font_class": "plus",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "8875697",
+      "name": "搜索",
+      "font_class": "search",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "538491",
+      "name": "减",
+      "font_class": "minus",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "1129603",
+      "name": "首页",
+      "font_class": "home",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "201228",
+      "name": "3.1我的",
+      "font_class": "mine",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "577341",
+      "name": "购物车",
+      "font_class": "shoping-cart",
+      "unicode": "e73d",
+      "unicode_decimal": 59197
+    },
+    {
+      "icon_id": "15077423",
+      "name": "分类",
+      "font_class": "classification",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    }
+  ]
+}
