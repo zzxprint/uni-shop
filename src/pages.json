@@ -35,6 +35,12 @@
       "style": {
         "navigationBarTitleText": "收货地址"
       }
+    },
+    {
+      "path": "pages/search/search",
+      "style": {
+        "navigationBarTitleText": "搜索商品"
+      }
     }
   ],
   "tabBar": {
