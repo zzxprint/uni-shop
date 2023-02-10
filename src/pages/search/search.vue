@@ -3,7 +3,7 @@
   <div class="search-container">
     <div class="search-input">
       <Icon icon="search" />
-      <input focus class="input" placeholder="搜索商品" type="text">
+      <input focus auto-focus class="input" placeholder="搜索商品" type="text">
     </div>
     <span class="search-text">搜索</span>
   </div>
@@ -76,6 +76,7 @@ import Icon from '@/components/Icon.vue'
       line-height: 50rpx;
       padding: 0 20rpx;
       margin: 10rpx;
+      font-size: 28rpx;
       background: #e5e5e5;
       border-radius: 25rpx;
     }
