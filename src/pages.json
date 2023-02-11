@@ -31,6 +31,12 @@
       }
     },
     {
+      "path": "pages/orders/orders",
+      "style": {
+        "navigationBarTitleText": "订单"
+      }
+    },
+    {
       "path": "pages/address/address",
       "style": {
         "navigationBarTitleText": "收货地址"

@@ -1,12 +1,20 @@
 <template>
   <div class="orders-bar">
     <div class="orders-bar-pad">
-      <ClassificationButton text="待付款" icon="wallet" icon-color="#fbc02d" width="136rpx" />
-      <ClassificationButton text="待收货" icon="car" icon-color="#fbc02d" width="136rpx" />
-      <ClassificationButton text="已完成" icon="finish-order" icon-color="#fbc02d" width="136rpx" />
+      <navigator class="tool-btn" url="/pages/orders/orders?tab=tobePaid">
+        <ClassificationButton text="待付款" icon="wallet" icon-color="#fbc02d" width="136rpx" />
+      </navigator>
+      <navigator class="tool-btn" url="/pages/orders/orders?tab=tobeReceived">
+        <ClassificationButton text="待收货" icon="car" icon-color="#fbc02d" width="136rpx" />
+      </navigator>
+      <navigator class="tool-btn" url="/pages/orders/orders?tab=finish">
+        <ClassificationButton text="已完成" icon="finish-order" icon-color="#fbc02d" width="136rpx" />
+      </navigator>
       <ClassificationButton text="售后" icon="refund" icon-color="#fbc02d" width="136rpx" />
       <div class="all-orders">
-        <ClassificationButton text="全部" icon="order" icon-color="#fbc02d" width="136rpx" />
+        <navigator class="tool-btn" url="/pages/orders/orders?tab=all">
+          <ClassificationButton text="全部" icon="order" icon-color="#fbc02d" width="136rpx" />
+        </navigator>
       </div>
     </div>
   </div>
