@@ -12,6 +12,7 @@
       "path": "pages/class/class",
       "style": {
         "navigationBarTitleText": "分类",
+        "navigationStyle": "custom",
         "enablePullDownRefresh": true
       }
     },
