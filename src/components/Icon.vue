@@ -5,6 +5,7 @@
       color: props.color,
       fontSize: props.size
     }"
+    @click="emit('click')"
   >
   </div>
 </template>
@@ -24,6 +25,7 @@ const props = defineProps({
     default: '32rpx'
   }
 })
+const emit = defineEmits(['click'])
 </script>
 
 <style lang="scss" scoped>

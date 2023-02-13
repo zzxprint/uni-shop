@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "2892817",
+      "name": "常用购票人／编辑32",
+      "font_class": "edit",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "11078653",
+      "name": "删除",
+      "font_class": "delete",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
       "icon_id": "7404519",
       "name": "勾",
       "font_class": "tick",
