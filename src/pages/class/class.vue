@@ -1,64 +1,37 @@
 <template>
   <!-- 搜索框 -->
-  <div ref="searhDom" class="search-container" :style="{ paddingTop: searchPaddingTop, paddingRight: searchPaddingRight }">
-    <FakeSearchInput placeholder="搜索商品" :height="searchHeight" :hide-btton="true" />
-  </div>
+  <SearchContainer @getHeight="setClassHeight" />
   <div class="classification" :style="{ height: classHieght }">
-    <scroll-view
-      class="class-container"
-      scroll-y
-    >
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-      <div class="class-btn">分类名称</div>
-    </scroll-view>
-    <scroll-view
-      class="goods-container"
-      scroll-y
-    >
-      <GoodListCard />
-      <GoodListCard />
-      <GoodListCard />
-      <GoodListCard />
-      <GoodListCard />
-      <GoodListCard />
-      <GoodListCard />
-      <GoodListCard />
-    </scroll-view>
+    <!-- 分类列表 -->
+    <SideBar v-model="activeClass" :list="classList" />
+    <!-- 商品列表 -->
+    <GoodsContainer />
   </div>
 </template>
 
 <script setup lang="ts">
-import GoodListCard from "@/components/GoodListCard.vue"
-import FakeSearchInput from "@/components/FakeSearchInput.vue"
+import SearchContainer from './components/SearchContainer.vue'
+import SideBar from '@/components/SideBar.vue'
+import GoodsContainer from './components/GoodsContainer.vue'
 import { onPullDownRefresh } from "@dcloudio/uni-app"
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 
-// 获取右上角胶囊位置并控制搜索栏高度和位置、分类页面高度
-const searchHeight = ref('65rpx')
-const searchPaddingTop = ref('10rpx')
-const searchPaddingRight = ref('30rpx')
+// 获取分类容器高度
 const classHieght = ref('100%')
-onMounted(() => {
-  if (uni.getMenuButtonBoundingClientRect) {
-    let { top, height, left } = uni.getMenuButtonBoundingClientRect()
-    searchHeight.value = height + 'px'
-    searchPaddingTop.value = top + 'px'
-    searchPaddingRight.value = `calc(100% - ${left}px + 30rpx)`
-  }
-  classHieght.value = `calc(100% - ${searchHeight.value} - ${searchPaddingTop.value} - 10rpx)`
-})
+const setClassHeight = (height: string) => {
+  classHieght.value = height
+}
+
+// 获取分类列表信息
+const classList = [
+  { label: '分类名称1', value: 'class1' },
+  { label: '分类名称2', value: 'class2' },
+  { label: '分类名称3', value: 'class3' },
+  { label: '分类名称4', value: 'class4' }
+]
+
+// 当前激活的分类
+const activeClass = ref('class1')
 
 // 下拉刷新
 onPullDownRefresh(() => {
@@ -74,31 +47,8 @@ page{
 </style>
 
 <style lang="scss" scoped>
-.search-container{
-  width: 100%;
-  padding: 10rpx 30rpx;
-  background: #fff;
-  box-sizing: border-box;
-}
 .classification{
   display: flex;
   height: 100%;
-  .class-container{
-    flex-shrink: 0;
-    width: 180rpx;
-    height: 100%;
-    background: #fff;
-    .class-btn{
-      padding-left: 20rpx;
-      height: 100rpx;
-      line-height: 100rpx;
-      font-size: 26rpx;
-    }
-  }
-  .goods-container{
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-  }
 }
 </style>
