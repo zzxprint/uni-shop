@@ -44,6 +44,12 @@
       }
     },
     {
+      "path": "pages/address/editAddress/editAddress",
+      "style": {
+        "navigationBarTitleText": "编辑地址"
+      }
+    },
+    {
       "path": "pages/search/search",
       "style": {
         "navigationBarTitleText": "搜索商品"
