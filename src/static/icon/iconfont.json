@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "15838429",
+      "name": "arrow-down",
+      "font_class": "arrow",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
       "icon_id": "2892817",
       "name": "常用购票人／编辑32",
       "font_class": "edit",

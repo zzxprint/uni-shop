@@ -3,7 +3,8 @@
     :class="['iconfont', `icon-${props.icon}`]"
     :style="{
       color: props.color,
-      fontSize: props.size
+      fontSize: props.size,
+      transform: `rotate(${rotate}deg)`
     }"
     @click="emit('click')"
   >
@@ -23,6 +24,10 @@ const props = defineProps({
   size: {
     type: String,
     default: '32rpx'
+  },
+  rotate: {
+    type: Number,
+    default: 0
   }
 })
 const emit = defineEmits(['click'])
