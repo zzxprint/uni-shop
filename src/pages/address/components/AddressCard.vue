@@ -7,11 +7,12 @@
       </div>
       <div class="address-detail">浙江省 杭州市 滨江区 浦沿街道联庄公寓8幢2单元501</div>
     </div>
-    <div class="edit-btn" @click="toEditAddressPage">编辑</div>
+    <Icon icon="edit" size="38rpx" color="#666" @click="toEditAddressPage"/>
   </div>
 </template>
 
 <script setup lang="ts">
+import Icon from '@/components/Icon.vue'
 // 去往编辑页面
 const toEditAddressPage = () => {
   uni.navigateTo({
