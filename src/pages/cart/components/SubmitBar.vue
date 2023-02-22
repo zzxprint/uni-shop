@@ -11,13 +11,14 @@
         <span>￥99</span>
       </div>
       <!-- 结算按钮 -->
-      <button class="submit-btn">结 算</button>
+      <UnButton class="submit-btn">结算</UnButton>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import CheckBox from '@/components/CheckBox.vue'
+import UnButton from '@/components/UnButton.vue'
 </script>
 
 <style lang="scss" scoped>

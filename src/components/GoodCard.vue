@@ -1,6 +1,6 @@
 <!-- 商品卡片 -->
 <template>
-  <div class="good-card">
+  <div class="good-card" @click="gotoDetail">
     <!-- 商品图片 -->
     <div class="good-img"></div>
     <!-- 商品信息 -->
@@ -21,6 +21,13 @@
 
 <script setup lang="ts">
 import Tag from './Tag.vue'
+
+// 去往商品详情
+const gotoDetail = () => {
+  uni.navigateTo({
+    url: '/pages/goodsDetail/goodsDetail'
+  })
+}
 </script>
 
 <style lang="scss" scoped>

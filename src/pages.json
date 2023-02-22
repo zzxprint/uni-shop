@@ -54,6 +54,12 @@
       "style": {
         "navigationBarTitleText": "搜索商品"
       }
+    },
+    {
+      "path": "pages/goodsDetail/goodsDetail",
+      "style": {
+        "navigationBarTitleText": "商品详情"
+      }
     }
   ],
   "tabBar": {
