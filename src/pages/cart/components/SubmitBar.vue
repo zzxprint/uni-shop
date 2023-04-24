@@ -23,7 +23,7 @@ import UnButton from '@/components/UnButton.vue'
 
 <style lang="scss" scoped>
 .submit-bar{
-  position: fixed;
+  position: absolute;
   bottom: 0;
   display: flex;
   justify-content: space-between;

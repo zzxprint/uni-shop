@@ -1,6 +1,8 @@
 <template>
   <button class="un-button" hover-class="hover-normal" @click="emit('click')">
-    <slot></slot>
+    <span class="un-button-text">
+      <slot></slot>
+    </span>
   </button>
 </template>
 
@@ -14,11 +16,15 @@ const emit = defineEmits(['click'])
   line-height: 90rpx;
   border-radius: 45rpx;
   color: #fff;
-  letter-spacing: 2rpx;
+  text-align: center;
   font-size: $font-size-lg;
   background-color: $main-color;
   &::after{
     border: none;
   }
+}
+.un-button-text{
+  text-align: center;
+  letter-spacing: 4rpx;
 }
 </style>
