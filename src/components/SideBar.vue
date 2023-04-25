@@ -34,8 +34,8 @@ const emit = defineEmits<Emit>()
 
 <style lang="scss" scoped>
 .side-bar{
+  flex: 0;
   height: 100%;
-  width: 100%;
   background: #fff;
   min-width: 180rpx;
   .side-bar-item{
