@@ -27,5 +27,4 @@ const safeAreaInsets = systemInfoStore.safeAreaInsetsGet
 const paddingBottom = `${(safeAreaInsets?.bottom || 0) + rpx2px(140)}px`
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

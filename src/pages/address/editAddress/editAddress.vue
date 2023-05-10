@@ -2,33 +2,72 @@
   <!-- 收货信息 -->
   <UnCard>
     <UnCell label="收货人">
-      <input placeholder-class="placeholder" type="text" placeholder="请输入收货人">
+      <input
+        placeholder-class="placeholder"
+        type="text"
+        placeholder="请输入收货人"
+      />
     </UnCell>
     <UnCell label="手机号码">
-      <input placeholder-class="placeholder" type="text" placeholder="请输入手机号码">
+      <input
+        placeholder-class="placeholder"
+        type="text"
+        placeholder="请输入手机号码"
+      />
     </UnCell>
     <picker mode="region" @change="bindRegionChange">
-      <UnCell label="所在地区" :value="region" placeholder="请选择所在地区" labelWidth="300rpx">
+      <UnCell
+        label="所在地区"
+        :value="region"
+        placeholder="请选择所在地区"
+        labelWidth="300rpx"
+      >
       </UnCell>
     </picker>
     <UnCell label="详细地址">
-      <input placeholder-class="placeholder" type="text" placeholder="请输入详细地址">
+      <input
+        placeholder-class="placeholder"
+        type="text"
+        placeholder="请输入详细地址"
+      />
     </UnCell>
   </UnCard>
   <!-- 标签 -->
   <UnCard>
     <UnCell label="地址标签">
       <div class="tag-container">
-        <Tag fill round :color="tag === 'home' ? '#fbc02d' : '#ccc'" text="家" @click="chooseTag('home')"/>
-        <Tag fill round :color="tag === 'company' ? '#fbc02d' : '#ccc'" text="公司" @click="chooseTag('company')"/>
-        <Tag fill round :color="tag === 'school' ? '#fbc02d' : '#ccc'" text="学校" @click="chooseTag('school')"/>
+        <Tag
+          fill
+          round
+          :color="tag === 'home' ? '#fbc02d' : '#ccc'"
+          text="家"
+          @click="chooseTag('home')"
+        />
+        <Tag
+          fill
+          round
+          :color="tag === 'company' ? '#fbc02d' : '#ccc'"
+          text="公司"
+          @click="chooseTag('company')"
+        />
+        <Tag
+          fill
+          round
+          :color="tag === 'school' ? '#fbc02d' : '#ccc'"
+          text="学校"
+          @click="chooseTag('school')"
+        />
       </div>
     </UnCell>
   </UnCard>
   <!-- 默认地址 -->
   <UnCard>
     <UnCell label="设为默认收货地址">
-      <switch checked color="#fbc02d" style="transform: scale(0.9) translateX(10rpx);" />
+      <switch
+        checked
+        color="#fbc02d"
+        style="transform: scale(0.9) translateX(10rpx)"
+      />
     </UnCell>
   </UnCard>
   <div class="btn-container">
@@ -57,12 +96,12 @@ const chooseTag = (tagName: string) => {
 </script>
 
 <style lang="scss" scoped>
-.tag-container{
+.tag-container {
   display: flex;
   justify-content: space-around;
   width: 220rpx;
 }
-.btn-container{
+.btn-container {
   padding: 0 30rpx;
 }
 </style>

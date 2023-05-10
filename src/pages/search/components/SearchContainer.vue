@@ -9,17 +9,12 @@
         placeholder="搜索商品"
         type="text"
         :value="props.modelValue"
-        @input="emit('update:modelValue', ($event.target as HTMLInputElement).value)"
+        @input="
+          emit('update:modelValue', ($event.target as HTMLInputElement).value)
+        "
       />
-      <div
-        class="delete-icon"
-        @click="emit('update:modelValue', '')"
-      >
-        <Icon
-          v-show="props.modelValue"
-          icon="delete"
-          color="#999"
-        />
+      <div class="delete-icon" @click="emit('update:modelValue', '')">
+        <Icon v-show="props.modelValue" icon="delete" color="#999" />
       </div>
     </div>
     <span class="search-text" @click="searchClick">搜索</span>
@@ -37,12 +32,12 @@ const searchClick = () => {
 </script>
 
 <style lang="scss" scoped>
-.search-container{
+.search-container {
   display: flex;
   align-items: center;
   padding: 20rpx 0 10rpx 0;
   background: #fff;
-  .search-input{
+  .search-input {
     display: flex;
     align-items: center;
     padding: 0 20rpx;
@@ -51,12 +46,12 @@ const searchClick = () => {
     height: 65rpx;
     border-radius: 65rpx;
     background: $background-color;
-    .input{
+    .input {
       width: 100%;
       margin-left: 20rpx;
       font-size: 28rpx;
     }
-    .delete-icon{
+    .delete-icon {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -64,7 +59,7 @@ const searchClick = () => {
       width: 50rpx;
     }
   }
-  .search-text{
+  .search-text {
     flex-shrink: 0;
     padding: 0 15rpx;
     width: 80rpx;

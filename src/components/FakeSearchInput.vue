@@ -7,7 +7,7 @@
     }"
     @click="toSearchPage"
   >
-    <Icon icon="search" size="40rpx" color="#fbc02d"/>
+    <Icon icon="search" size="40rpx" color="#fbc02d" />
     <span class="place-holder">{{ placeholder }}</span>
     <div
       v-show="!hideBtton"
@@ -50,7 +50,7 @@ const toSearchPage = () => {
 </script>
 
 <style lang="scss" scoped>
-.search-input{
+.search-input {
   position: relative;
   display: flex;
   align-items: center;
@@ -60,14 +60,14 @@ const toSearchPage = () => {
   border: 4rpx solid $main-color;
   box-sizing: border-box;
   overflow: hidden;
-  .place-holder{
+  .place-holder {
     width: 100%;
     padding-left: 10rpx;
     text-align: left;
     font-size: 26rpx;
     color: #999;
   }
-  .search-btn{
+  .search-btn {
     position: absolute;
     top: -4rpx;
     right: -4rpx;

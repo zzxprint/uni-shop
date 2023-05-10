@@ -1,21 +1,10 @@
 <template>
   <!-- 搜索框 -->
-  <SearchContainer
-    v-model="searchText"
-    @search="search"
-  />
+  <SearchContainer v-model="searchText" @search="search" />
   <!-- 搜索历史 -->
-  <SearchTips
-    title="搜索历史"
-    :tagList="history"
-    @choose="chooseTag"
-  />
+  <SearchTips title="搜索历史" :tagList="history" @choose="chooseTag" />
   <!-- 推荐搜索 -->
-  <SearchTips
-    title="搜索发现"
-    :tagList="discovery"
-    @choose="chooseTag"
-  />
+  <SearchTips title="搜索发现" :tagList="discovery" @choose="chooseTag" />
 </template>
 
 <script setup lang="ts">
@@ -40,6 +29,4 @@ const search = () => {
 }
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

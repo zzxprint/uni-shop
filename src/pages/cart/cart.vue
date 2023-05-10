@@ -12,7 +12,7 @@ import SubmitBar from '@/pages/cart/components/SubmitBar.vue'
 </script>
 
 <style lang="scss">
-.cart{
+.cart {
   padding: 30rpx;
 }
 </style>

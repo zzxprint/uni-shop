@@ -1,11 +1,7 @@
 <template>
   <div class="stepper">
     <button class="minus-btn" @click="minusValue">-</button>
-    <input
-      class="step-input"
-      type="number"
-      v-model="value"
-    >
+    <input class="step-input" type="number" v-model="value" />
     <button class="plus-btn" @click="plusValue">+</button>
   </div>
 </template>
@@ -34,24 +30,25 @@ const plusValue = () => {
 </script>
 
 <style lang="scss" scoped>
-.stepper{
+.stepper {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 40rpx;
   width: auto;
-  .minus-btn, .plus-btn{
+  .minus-btn,
+  .plus-btn {
     padding: 0;
     width: 50rpx;
     height: 40rpx;
     line-height: 40rpx;
     margin: 0;
     background: #fff;
-    &::after{
+    &::after {
       border: none;
     }
   }
-  .step-input{
+  .step-input {
     height: 40rpx;
     width: 60rpx;
     background: #eee;

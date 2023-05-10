@@ -1,95 +1,94 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 1372881 */
+  font-family: iconfont; /* Project id 1372881 */
   src: url('iconfont.woff2?t=1676898995502') format('woff2'),
-       url('iconfont.woff?t=1676898995502') format('woff'),
-       url('iconfont.ttf?t=1676898995502') format('truetype');
+    url('iconfont.woff?t=1676898995502') format('woff'),
+    url('iconfont.ttf?t=1676898995502') format('truetype');
 }
 
 .iconfont {
-  font-family: "iconfont" !important;
   font-size: 16px;
+  font-family: iconfont, sans-serif !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow:before {
-  content: "\e665";
+.icon-arrow::before {
+  content: '\e665';
 }
 
-.icon-edit:before {
-  content: "\e646";
+.icon-edit::before {
+  content: '\e646';
 }
 
-.icon-delete:before {
-  content: "\e60a";
+.icon-delete::before {
+  content: '\e60a';
 }
 
-.icon-tick:before {
-  content: "\e786";
+.icon-tick::before {
+  content: '\e786';
 }
 
-.icon-service:before {
-  content: "\ec2e";
+.icon-service::before {
+  content: '\ec2e';
 }
 
-.icon-car:before {
-  content: "\e602";
+.icon-car::before {
+  content: '\e602';
 }
 
-.icon-refund:before {
-  content: "\e619";
+.icon-refund::before {
+  content: '\e619';
 }
 
-.icon-wallet:before {
-  content: "\e611";
+.icon-wallet::before {
+  content: '\e611';
 }
 
-.icon-position:before {
-  content: "\e67e";
+.icon-position::before {
+  content: '\e67e';
 }
 
-.icon-person:before {
-  content: "\e62c";
+.icon-person::before {
+  content: '\e62c';
 }
 
-.icon-order:before {
-  content: "\e645";
+.icon-order::before {
+  content: '\e645';
 }
 
-.icon-finish-order:before {
-  content: "\e60f";
+.icon-finish-order::before {
+  content: '\e60f';
 }
 
-.icon-setting:before {
-  content: "\e647";
+.icon-setting::before {
+  content: '\e647';
 }
 
-.icon-plus:before {
-  content: "\e64d";
+.icon-plus::before {
+  content: '\e64d';
 }
 
-.icon-search:before {
-  content: "\e669";
+.icon-search::before {
+  content: '\e669';
 }
 
-.icon-minus:before {
-  content: "\e643";
+.icon-minus::before {
+  content: '\e643';
 }
 
-.icon-home:before {
-  content: "\e627";
+.icon-home::before {
+  content: '\e627';
 }
 
-.icon-mine:before {
-  content: "\e600";
+.icon-mine::before {
+  content: '\e600';
 }
 
-.icon-shoping-cart:before {
-  content: "\e73d";
+.icon-shoping-cart::before {
+  content: '\e73d';
 }
 
-.icon-classification:before {
-  content: "\e638";
+.icon-classification::before {
+  content: '\e638';
 }
-

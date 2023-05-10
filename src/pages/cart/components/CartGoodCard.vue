@@ -36,7 +36,7 @@ const select = ref(false)
 </script>
 
 <style lang="scss" scoped>
-.cart-good-card{
+.cart-good-card {
   display: flex;
   align-items: center;
   padding: 0 20rpx;
@@ -45,7 +45,7 @@ const select = ref(false)
   border-radius: $radius-base;
   box-sizing: border-box;
   background: #fff;
-  .select-container{
+  .select-container {
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -53,39 +53,39 @@ const select = ref(false)
     margin-right: 20rpx;
     height: 100%;
   }
-  .good-img{
+  .good-img {
     flex-shrink: 0;
     height: 200rpx;
     width: 200rpx;
     border-radius: $radius-base;
     background: #f5f5f5;
   }
-  .good-info{
+  .good-info {
     margin-left: 10rpx;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 200rpx;
-    .good-text{
+    .good-text {
       display: -webkit-box;
       word-break: break-all;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
       font-size: 30rpx;
-      .good-tag{
+      .good-tag {
         color: red;
       }
     }
-    .good-price-operate{
+    .good-price-operate {
       display: flex;
       justify-content: space-between;
       margin-top: 10rpx;
-      .final-price{
+      .final-price {
         color: red;
         font-weight: 500;
       }
-      .origin-price{
+      .origin-price {
         margin-left: 5rpx;
         font-size: 24rpx;
         color: #999;

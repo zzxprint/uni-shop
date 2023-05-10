@@ -11,7 +11,9 @@
       </div>
       <div class="un-cell-content">
         <slot></slot>
-        <span class="un-cell-placeholder" v-if="value === ''">{{ placeholder }}</span>
+        <span class="un-cell-placeholder" v-if="value === ''">{{
+          placeholder
+        }}</span>
         <span class="un-cell-value">{{ value }}</span>
         <Icon
           class="un-cell-icon"
@@ -27,7 +29,7 @@
 </template>
 
 <script setup lang="ts">
-import type { placeholder } from '@babel/types';
+import type { placeholder } from '@babel/types'
 import Icon from './Icon.vue'
 const props = defineProps({
   label: String,
@@ -41,14 +43,14 @@ const props = defineProps({
   isLink: {
     type: Boolean,
     default: false
-  },
+  }
 })
 </script>
 
 <style lang="scss" scoped>
-.un-cell{
+.un-cell {
   padding: 0 30rpx;
-  .un-cell-container{
+  .un-cell-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,11 +59,11 @@ const props = defineProps({
     line-height: 80rpx;
     border-bottom: 1px solid #f5f5f5;
   }
-  .un-cell-label{
+  .un-cell-label {
     color: $font-color-light;
     font-size: $font-size-base;
   }
-  .un-cell-content{
+  .un-cell-content {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -71,10 +73,10 @@ const props = defineProps({
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    .un-cell-placeholder{
+    .un-cell-placeholder {
       color: #999;
     }
-    .un-cell-value{
+    .un-cell-value {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;

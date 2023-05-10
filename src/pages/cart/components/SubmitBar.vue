@@ -22,7 +22,7 @@ import UnButton from '@/components/UnButton.vue'
 </script>
 
 <style lang="scss" scoped>
-.submit-bar{
+.submit-bar {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -33,26 +33,26 @@ import UnButton from '@/components/UnButton.vue'
   border-top: 2rpx solid #f8f8f8;
   box-sizing: border-box;
   background: #fff;
-  .select-container{
+  .select-container {
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
   }
-  .operation-container{
+  .operation-container {
     display: flex;
     align-items: center;
     height: 100%;
-    .total-price{
+    .total-price {
       margin-right: 20rpx;
     }
-    .submit-btn{
+    .submit-btn {
       height: 90rpx;
       line-height: 90rpx;
       width: 240rpx;
       border-radius: $radius-lg;
-      &::after{
+      &::after {
         border: none;
       }
     }

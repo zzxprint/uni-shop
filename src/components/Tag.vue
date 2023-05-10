@@ -38,7 +38,7 @@ const emit = defineEmits(['click'])
 </script>
 
 <style lang="scss" scoped>
-.label{
+.label {
   display: inline-flex;
   justify-content: center;
   padding: 2rpx 4rpx;

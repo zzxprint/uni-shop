@@ -26,7 +26,7 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
-.class-button{
+.class-button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,7 @@ const props = defineProps({
   width: v-bind(width);
   background: #fff;
   box-sizing: border-box;
-  .class-img{
+  .class-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,13 +42,13 @@ const props = defineProps({
     width: 90rpx;
     border-radius: $radius-base;
     overflow: hidden;
-    .fake-img{
+    .fake-img {
       height: 100%;
       width: 100%;
       background: #eee;
     }
   }
-  .class-text{
+  .class-text {
     margin-top: 10rpx;
     width: v-bind(width);
     overflow: hidden;

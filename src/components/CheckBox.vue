@@ -1,5 +1,5 @@
 <template>
-  <div class="check-box" :class="{ 'selected': modelValue }" @click="toggle">
+  <div class="check-box" :class="{ selected: modelValue }" @click="toggle">
     <Icon v-show="modelValue" icon="tick" size="28rpx" color="#fff" />
   </div>
 </template>
@@ -8,7 +8,7 @@
 import Icon from './Icon.vue'
 const props = defineProps({
   modelValue: {
-    type: [Boolean,String],
+    type: [Boolean, String],
     default: false
   }
 })
@@ -22,7 +22,7 @@ const toggle = () => {
 </script>
 
 <style lang="scss" scoped>
-.check-box{
+.check-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +31,7 @@ const toggle = () => {
   border: 2rpx solid #ccc;
   border-radius: 50%;
   background: #fff;
-  &.selected{
+  &.selected {
     border-color: $main-color;
     background: $main-color;
   }

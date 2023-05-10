@@ -13,12 +13,10 @@
   </div>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <style lang="scss" scoped>
-.goods-detail{
+.goods-detail {
   margin-top: 20rpx;
   width: 100%;
   height: auto;

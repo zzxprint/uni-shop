@@ -1,4 +1,4 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia'
 
 type SystemInfo = Partial<UniApp.GetSystemInfoResult>
 
@@ -22,9 +22,9 @@ export const useSystemInfoStore = defineStore({
     safeAreaInsetsGet: state => state.safeAreaInsets
   },
   actions: {
-    getSystemInfo () {
+    getSystemInfo() {
       uni.getSystemInfo({
-        success: (res) => {
+        success: res => {
           const { screenWidth, devicePixelRatio, osName, safeAreaInsets } = res
           this.screenWidth = screenWidth
           this.devicePixelRatio = devicePixelRatio

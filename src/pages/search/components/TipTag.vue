@@ -14,7 +14,7 @@ const choose = () => {
 </script>
 
 <style lang="scss" scoped>
-.tip-tag{
+.tip-tag {
   height: 50rpx;
   line-height: 50rpx;
   padding: 0 20rpx;

@@ -13,7 +13,7 @@
 import SearchContainer from './components/SearchContainer.vue'
 import SideBar from '@/components/SideBar.vue'
 import GoodsContainer from './components/GoodsContainer.vue'
-import { onPullDownRefresh } from "@dcloudio/uni-app"
+import { onPullDownRefresh } from '@dcloudio/uni-app'
 import { ref } from 'vue'
 
 // 获取分类容器高度
@@ -41,13 +41,13 @@ onPullDownRefresh(() => {
 </script>
 
 <style>
-page{
+page {
   height: 100%;
 }
 </style>
 
 <style lang="scss" scoped>
-.classification{
+.classification {
   display: flex;
   height: 100%;
 }

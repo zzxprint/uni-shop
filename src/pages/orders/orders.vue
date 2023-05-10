@@ -23,7 +23,7 @@ const tabList = [
 
 // 加载时自动选取tab
 const active = ref('')
-onLoad((option) => {
+onLoad(option => {
   if (option && option.tab && tabList.some(e => e.value === option.tab)) {
     active.value = option.tab
   } else {
@@ -33,7 +33,7 @@ onLoad((option) => {
 </script>
 
 <style lang="scss" scoped>
-.orders-container{
+.orders-container {
   padding: 30rpx;
 }
 </style>

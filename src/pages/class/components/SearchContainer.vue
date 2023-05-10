@@ -1,11 +1,18 @@
 <template>
-  <div class="search-container" :style="{ paddingTop: searchPaddingTop, paddingRight: searchPaddingRight }">
-    <FakeSearchInput placeholder="搜索商品" :height="searchHeight" :hide-btton="true" />
+  <div
+    class="search-container"
+    :style="{ paddingTop: searchPaddingTop, paddingRight: searchPaddingRight }"
+  >
+    <FakeSearchInput
+      placeholder="搜索商品"
+      :height="searchHeight"
+      :hide-btton="true"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
-import FakeSearchInput from "@/components/FakeSearchInput.vue"
+import FakeSearchInput from '@/components/FakeSearchInput.vue'
 import { ref, onMounted } from 'vue'
 
 const emit = defineEmits(['getHeight'])
@@ -28,7 +35,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-.search-container{
+.search-container {
   width: 100%;
   padding: 10rpx 30rpx;
   background: #fff;

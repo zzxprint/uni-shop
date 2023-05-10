@@ -6,7 +6,7 @@
         v-for="name in props.tagList"
         :key="name"
         :tagName="name"
-        @choose="(name) => emit('choose', name)"
+        @choose="name => emit('choose', name)"
       />
     </div>
   </div>
@@ -19,16 +19,16 @@ const emit = defineEmits(['choose'])
 </script>
 
 <style lang="scss" scoped>
-.search-tips{
+.search-tips {
   padding: 40rpx 20rpx 0 20rpx;
-  .title{
+  .title {
     font-weight: bold;
   }
-  .tips-container{
+  .tips-container {
     display: flex;
     flex-wrap: wrap;
     padding: 20rpx 0;
-    .tips-tag{
+    .tips-tag {
       height: 50rpx;
       line-height: 50rpx;
       padding: 0 20rpx;

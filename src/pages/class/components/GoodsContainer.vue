@@ -1,8 +1,5 @@
 <template>
-  <scroll-view
-    class="goods-container"
-    scroll-y
-  >
+  <scroll-view class="goods-container" scroll-y>
     <GoodListCard />
     <GoodListCard />
     <GoodListCard />
@@ -15,11 +12,11 @@
 </template>
 
 <script setup lang="ts">
-import GoodListCard from "@/components/GoodListCard.vue"
+import GoodListCard from '@/components/GoodListCard.vue'
 </script>
 
 <style lang="scss" scoped>
-.goods-container{
+.goods-container {
   width: 100%;
   height: 100%;
   box-sizing: border-box;

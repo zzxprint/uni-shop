@@ -31,21 +31,21 @@ const gotoDetail = () => {
 </script>
 
 <style lang="scss" scoped>
-.good-card{
+.good-card {
   height: auto;
   width: 330rpx;
   background: #fff;
   border-radius: $radius-base;
   box-sizing: border-box;
-  .good-img{
+  .good-img {
     height: 330rpx;
     width: 330rpx;
     border-radius: $radius-base $radius-base 0 0;
     background: #eee;
   }
-  .good-info{
+  .good-info {
     padding: 20rpx;
-    .good-text{
+    .good-text {
       display: -webkit-box;
       word-break: break-all;
       -webkit-line-clamp: 2;
@@ -54,13 +54,13 @@ const gotoDetail = () => {
       font-size: 30rpx;
     }
   }
-  .good-price{
+  .good-price {
     padding: 0 20rpx 20rpx 20rpx;
-    .final-price{
+    .final-price {
       color: red;
       font-weight: 500;
     }
-    .origin-price{
+    .origin-price {
       margin-left: 5rpx;
       font-size: 24rpx;
       color: #999;

@@ -25,30 +25,30 @@ import Tag from '@/components/Tag.vue'
 </script>
 
 <style lang="scss" scoped>
-.order-card{
+.order-card {
   padding: 20rpx;
   height: 240rpx;
   width: 100%;
   border-radius: $radius-base;
   box-sizing: border-box;
   background: #fff;
-  .order-base{
+  .order-base {
     display: flex;
     align-items: center;
-    .order-img{
+    .order-img {
       flex-shrink: 0;
       height: 140rpx;
       width: 140rpx;
       border-radius: $radius-base;
       background: #f5f5f5;
     }
-    .order-info{
+    .order-info {
       margin: 0 10rpx;
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 140rpx;
-      .order-text{
+      .order-text {
         display: -webkit-box;
         word-break: break-all;
         -webkit-line-clamp: 2;
@@ -57,23 +57,23 @@ import Tag from '@/components/Tag.vue'
         font-size: 30rpx;
       }
     }
-    .order-count{
+    .order-count {
       width: 100rpx;
       font-size: 24rpx;
       color: #999;
     }
   }
-  .order-state{
+  .order-state {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60rpx;
     line-height: 60rpx;
-    .order-payment{
+    .order-payment {
       text-align: right;
       font-weight: 500;
       font-size: 28rpx;
-      .small{
+      .small {
         font-size: 24rpx;
       }
     }

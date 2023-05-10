@@ -3,7 +3,7 @@
     <div
       v-for="tab in props.tabList"
       :key="tab.value"
-      :class="{ 'tab': true, 'active': tab.value === active }"
+      :class="{ tab: true, active: tab.value === active }"
       @click="changeTab(tab.value)"
     >
       {{ tab.text }}
@@ -13,11 +13,11 @@
 
 <script setup lang="ts">
 type tab = {
-  text: string,
+  text: string
   value: string
 }
 interface Props {
-  active: string,
+  active: string
   tabList: Array<tab>
 }
 const props = defineProps<Props>()
@@ -29,17 +29,17 @@ const changeTab = (value: string) => {
 </script>
 
 <style lang="scss" scoped>
-.tabs{
+.tabs {
   display: flex;
   height: 80rpx;
   line-height: 80rpx;
   background: #fff;
-  .tab{
+  .tab {
     text-align: center;
     flex: 1;
-    &.active{
+    &.active {
       position: relative;
-      &::after{
+      &::after {
         content: '';
         position: absolute;
         bottom: 0;

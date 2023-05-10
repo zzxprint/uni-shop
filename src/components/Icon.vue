@@ -7,8 +7,7 @@
       transform: `rotate(${rotate}deg)`
     }"
     @click="emit('click')"
-  >
-  </div>
+  ></div>
 </template>
 
 <script setup lang="ts">
@@ -33,6 +32,4 @@ const props = defineProps({
 const emit = defineEmits(['click'])
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

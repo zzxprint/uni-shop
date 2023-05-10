@@ -11,9 +11,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { onPullDownRefresh } from "@dcloudio/uni-app"
+import { onPullDownRefresh } from '@dcloudio/uni-app'
 import OrdersBar from '@/pages/mine/components/OrdersBar.vue'
-import ToolsContainer from '@/pages/mine/components/ToolsContainer.vue';
+import ToolsContainer from '@/pages/mine/components/ToolsContainer.vue'
 
 // 获取右上角胶囊位置并控制用户信息位置
 let paddingTop = ref('10px')
@@ -32,18 +32,18 @@ onPullDownRefresh(() => {
 </script>
 
 <style lang="scss" scoped>
-.user-info{
+.user-info {
   display: flex;
   align-items: center;
   padding: 0 30rpx;
   box-sizing: border-box;
-  .user-avatar{
+  .user-avatar {
     height: 100rpx;
     width: 100rpx;
     border-radius: 50%;
     background: #eee;
   }
-  .user-name{
+  .user-name {
     margin-left: 20rpx;
   }
 }

@@ -5,9 +5,11 @@
         <span class="user-name">张大千</span>
         157****0057
       </div>
-      <div class="address-detail">浙江省 杭州市 滨江区 浦沿街道联庄公寓8幢2单元501</div>
+      <div class="address-detail">
+        浙江省 杭州市 滨江区 浦沿街道联庄公寓8幢2单元501
+      </div>
     </div>
-    <Icon icon="edit" size="38rpx" color="#666" @click="toEditAddressPage"/>
+    <Icon icon="edit" size="38rpx" color="#666" @click="toEditAddressPage" />
   </div>
 </template>
 
@@ -22,7 +24,7 @@ const toEditAddressPage = () => {
 </script>
 
 <style lang="scss" scoped>
-.address-card{
+.address-card {
   display: flex;
   align-items: center;
   padding: 40rpx;
@@ -32,22 +34,22 @@ const toEditAddressPage = () => {
   background: #fff;
   border-radius: $radius-base;
   box-sizing: border-box;
-  .address-info{
+  .address-info {
     width: 100%;
-    .user-info{
+    .user-info {
       font-size: 30rpx;
-      .user-name{
+      .user-name {
         font-size: 32rpx;
       }
     }
-    .address-detail{
+    .address-detail {
       margin-top: 10rpx;
       font-size: 24rpx;
       color: #666;
       letter-spacing: 2rpx;
     }
   }
-  .edit-btn{
+  .edit-btn {
     flex-shrink: 0;
     width: 80rpx;
     text-align: right;

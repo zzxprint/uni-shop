@@ -1,8 +1,5 @@
 <template>
-  <scroll-view
-    class="side-bar"
-    scroll-y
-  >
+  <scroll-view class="side-bar" scroll-y>
     <div
       class="side-bar-item"
       hover-class="hover-normal"
@@ -18,11 +15,11 @@
 
 <script setup lang="ts">
 interface SideBarItem {
-  label: string,
+  label: string
   value: string
 }
 interface Props {
-  modelValue?: string,
+  modelValue?: string
   list: Array<SideBarItem>
 }
 interface Emit {
@@ -33,17 +30,17 @@ const emit = defineEmits<Emit>()
 </script>
 
 <style lang="scss" scoped>
-.side-bar{
+.side-bar {
   flex: 0;
   height: 100%;
   background: #fff;
   min-width: 180rpx;
-  .side-bar-item{
+  .side-bar-item {
     position: relative;
     padding-left: 20rpx;
     height: 100rpx;
     line-height: 100rpx;
-    &.active::after{
+    &.active::after {
       content: '';
       position: absolute;
       left: 0;

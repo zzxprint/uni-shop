@@ -30,14 +30,14 @@ const swiperChange = (e: any) => {
 </script>
 
 <style lang="scss" scoped>
-.swiper-content{
+.swiper-content {
   position: relative;
   height: 750rpx;
-  .swiper{
+  .swiper {
     height: 100%;
     background: #eee;
   }
-  .step-info{
+  .step-info {
     display: flex;
     padding: 0 10rpx;
     position: absolute;
@@ -52,7 +52,7 @@ const swiperChange = (e: any) => {
     font-size: $font-size-sm;
     background: rgba($color: #000000, $alpha: 0.3);
     box-sizing: border-box;
-    .step-detail{
+    .step-detail {
       flex: 1;
     }
   }

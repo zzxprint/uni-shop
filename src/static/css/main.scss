@@ -22,7 +22,7 @@ $radius-base: 20rpx;
 $radius-lg: 40rpx;
 
 // 触摸样式
-.hover-normal{
+.hover-normal {
   display: relative;
   &::before {
     display: block;
@@ -32,19 +32,19 @@ $radius-lg: 40rpx;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 10%)
+    background: rgba(0, 0, 0, 10%);
   }
 }
 
-.placeholder{
+.placeholder {
   color: #999;
 }
-::placeholder{
+::placeholder {
   color: #999;
 }
-::-moz-placeholder{
+::-moz-placeholder {
   color: #999;
 }
-::-webkit-input-placeholder{
+::-webkit-input-placeholder {
   color: #999;
 }

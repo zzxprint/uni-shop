@@ -20,13 +20,13 @@ import ClassificationButton from '@/components/ClassificationButton.vue'
 </script>
 
 <style lang="scss" scoped>
-.class-bar{
+.class-bar {
   margin-top: 20rpx;
   padding: 0 30rpx;
   width: 100%;
   height: 320rpx;
   box-sizing: border-box;
-  .class-bar-pad{
+  .class-bar-pad {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
