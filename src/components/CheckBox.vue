@@ -24,16 +24,16 @@ const toggle = () => {
 <style lang="scss" scoped>
 .check-box {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 40rpx;
+  align-items: center;
   width: 40rpx;
+  height: 40rpx;
+  background: #fff;
   border: 2rpx solid #ccc;
   border-radius: 50%;
-  background: #fff;
   &.selected {
-    border-color: $main-color;
     background: $main-color;
+    border-color: $main-color;
   }
 }
 </style>

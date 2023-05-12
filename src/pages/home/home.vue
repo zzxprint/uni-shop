@@ -58,10 +58,10 @@ onPullDownRefresh(() => {
   }
 }
 .hot-container {
-  padding: $padding-base;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  padding: $padding-base;
+  flex-wrap: wrap;
   box-sizing: border-box;
   .good-card {
     margin-bottom: 30rpx;

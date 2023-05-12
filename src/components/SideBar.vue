@@ -31,23 +31,23 @@ const emit = defineEmits<Emit>()
 
 <style lang="scss" scoped>
 .side-bar {
-  flex: 0;
+  min-width: 180rpx;
   height: 100%;
   background: #fff;
-  min-width: 180rpx;
+  flex: 0;
   .side-bar-item {
     position: relative;
     padding-left: 20rpx;
     height: 100rpx;
     line-height: 100rpx;
     &.active::after {
-      content: '';
       position: absolute;
-      left: 0;
       top: 25%;
+      left: 0;
       width: 8rpx;
       height: 50rpx;
       background: $main-color;
+      content: '';
     }
   }
 }

@@ -13,12 +13,12 @@ const emit = defineEmits(['click'])
 <style lang="scss" scoped>
 .un-button {
   height: 90rpx;
-  line-height: 90rpx;
-  border-radius: 45rpx;
-  color: #fff;
-  text-align: center;
   font-size: $font-size-lg;
+  text-align: center;
+  color: #fff;
   background-color: $main-color;
+  border-radius: 45rpx;
+  line-height: 90rpx;
   &::after {
     border: none;
   }

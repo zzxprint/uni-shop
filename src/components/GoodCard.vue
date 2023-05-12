@@ -32,16 +32,16 @@ const gotoDetail = () => {
 
 <style lang="scss" scoped>
 .good-card {
-  height: auto;
   width: 330rpx;
+  height: auto;
   background: #fff;
   border-radius: $radius-base;
   box-sizing: border-box;
   .good-img {
-    height: 330rpx;
     width: 330rpx;
-    border-radius: $radius-base $radius-base 0 0;
+    height: 330rpx;
     background: #eee;
+    border-radius: $radius-base $radius-base 0 0;
   }
   .good-info {
     padding: 20rpx;
@@ -55,7 +55,7 @@ const gotoDetail = () => {
     }
   }
   .good-price {
-    padding: 0 20rpx 20rpx 20rpx;
+    padding: 0 20rpx 20rpx;
     .final-price {
       color: red;
       font-weight: 500;
@@ -63,8 +63,8 @@ const gotoDetail = () => {
     .origin-price {
       margin-left: 5rpx;
       font-size: 24rpx;
-      color: #999;
       text-decoration: line-through;
+      color: #999;
     }
   }
 }

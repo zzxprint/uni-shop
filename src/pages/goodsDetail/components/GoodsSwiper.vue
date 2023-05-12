@@ -38,19 +38,19 @@ const swiperChange = (e: any) => {
     background: #eee;
   }
   .step-info {
+    position: absolute;
+    right: 30rpx;
+    bottom: 20rpx;
     display: flex;
     padding: 0 10rpx;
-    position: absolute;
-    bottom: 20rpx;
-    right: 30rpx;
     width: 90rpx;
     height: 45rpx;
-    line-height: 45rpx;
-    border-radius: 25rpx;
+    font-size: $font-size-sm;
     text-align: center;
     color: #eee;
-    font-size: $font-size-sm;
-    background: rgba($color: #000000, $alpha: 0.3);
+    background: rgba($color: #000, $alpha: 30%);
+    border-radius: 25rpx;
+    line-height: 45rpx;
     box-sizing: border-box;
     .step-detail {
       flex: 1;

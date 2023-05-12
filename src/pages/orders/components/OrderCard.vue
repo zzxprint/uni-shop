@@ -25,26 +25,26 @@ import UnTag from '@/components/UnTag.vue'
 <style lang="scss" scoped>
 .order-card {
   padding: 20rpx;
-  height: 240rpx;
   width: 100%;
+  height: 240rpx;
+  background: #fff;
   border-radius: $radius-base;
   box-sizing: border-box;
-  background: #fff;
   .order-base {
     display: flex;
     align-items: center;
     .order-img {
-      flex-shrink: 0;
-      height: 140rpx;
       width: 140rpx;
-      border-radius: $radius-base;
+      height: 140rpx;
       background: #f5f5f5;
+      border-radius: $radius-base;
+      flex-shrink: 0;
     }
     .order-info {
-      margin: 0 10rpx;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin: 0 10rpx;
       height: 140rpx;
       .order-text {
         display: -webkit-box;
@@ -68,9 +68,9 @@ import UnTag from '@/components/UnTag.vue'
     height: 60rpx;
     line-height: 60rpx;
     .order-payment {
+      font-size: 28rpx;
       text-align: right;
       font-weight: 500;
-      font-size: 28rpx;
       .small {
         font-size: 24rpx;
       }

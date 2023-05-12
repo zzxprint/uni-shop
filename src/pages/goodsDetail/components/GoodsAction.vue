@@ -38,8 +38,8 @@ const toShopingCart = () => {
 <style lang="scss" scoped>
 .goods-action {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   .cart-button {
     display: flex;
@@ -51,10 +51,10 @@ const toShopingCart = () => {
   .order-button-container {
     display: flex;
     .order-button {
-      height: 90rpx;
-      line-height: 90rpx;
-      border-radius: 45rpx;
       padding: 0 40rpx;
+      height: 90rpx;
+      border-radius: 45rpx;
+      line-height: 90rpx;
       &.left {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;

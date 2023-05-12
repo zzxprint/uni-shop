@@ -53,18 +53,18 @@ const toSearchPage = () => {
 .search-input {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
   padding-left: 20rpx;
   width: 100%;
   border: 4rpx solid $main-color;
   box-sizing: border-box;
-  overflow: hidden;
   .place-holder {
-    width: 100%;
     padding-left: 10rpx;
-    text-align: left;
+    width: 100%;
     font-size: $font-size-sm;
+    text-align: left;
     color: #999;
   }
   .search-btn {

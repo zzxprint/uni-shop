@@ -28,13 +28,13 @@ onMounted(() => {
 <style lang="scss" scoped>
 .un-bottom-bar {
   position: fixed;
-  padding: 0 $padding-base;
   bottom: 0;
+  z-index: 999;
   display: flex;
   align-items: center;
+  padding: 0 $padding-base;
   width: calc(100% - 60rpx);
   height: 120rpx;
   background: #fff;
-  z-index: 999;
 }
 </style>

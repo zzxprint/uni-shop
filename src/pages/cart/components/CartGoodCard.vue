@@ -40,32 +40,32 @@ const select = ref(false)
   display: flex;
   align-items: center;
   padding: 0 20rpx;
-  height: 240rpx;
   width: 100%;
+  height: 240rpx;
+  background: #fff;
   border-radius: $radius-base;
   box-sizing: border-box;
-  background: #fff;
   .select-container {
-    flex-shrink: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-right: 20rpx;
     height: 100%;
+    flex-shrink: 0;
   }
   .good-img {
-    flex-shrink: 0;
-    height: 200rpx;
     width: 200rpx;
-    border-radius: $radius-base;
+    height: 200rpx;
     background: #f5f5f5;
+    border-radius: $radius-base;
+    flex-shrink: 0;
   }
   .good-info {
-    margin-left: 10rpx;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    margin-left: 10rpx;
     height: 200rpx;
+    flex-direction: column;
     .good-text {
       display: -webkit-box;
       word-break: break-all;
@@ -88,8 +88,8 @@ const select = ref(false)
       .origin-price {
         margin-left: 5rpx;
         font-size: 24rpx;
-        color: #999;
         text-decoration: line-through;
+        color: #999;
       }
     }
   }

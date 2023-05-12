@@ -59,14 +59,15 @@ const backgroundColor = computed(() => {
 .label {
   display: inline-flex;
   justify-content: center;
+  overflow: hidden;
   padding: 2rpx 4rpx;
   width: auto;
   min-width: 50rpx;
-  line-height: 1.2;
   border: 2rpx solid;
+  line-height: 1.2;
   box-sizing: border-box;
-  overflow: hidden;
 }
+
 @mixin tag-color($color) {
   color: $color;
   border-color: $color;

@@ -18,9 +18,9 @@ const emit = defineEmits(['click'])
   box-sizing: border-box;
   .un-card-container {
     position: relative;
+    overflow: hidden;
     background: #fff;
     border-radius: $radius-base;
-    overflow: hidden;
     &::after {
       content: '';
       position: absolute;

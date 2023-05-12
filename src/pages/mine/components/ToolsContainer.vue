@@ -35,13 +35,13 @@ import ClassificationButton from '@/components/ClassificationButton.vue'
 
 <style lang="scss" scoped>
 .tools-container {
-  margin-top: 30rpx;
   padding: 0 $padding-base;
+  margin-top: 30rpx;
   .tools-pad {
     display: flex;
-    flex-wrap: wrap;
-    border-radius: $radius-base;
     background: #fff;
+    border-radius: $radius-base;
+    flex-wrap: wrap;
     .tool-btn {
       margin: 30rpx 0;
     }

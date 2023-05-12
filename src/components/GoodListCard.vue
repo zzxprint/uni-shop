@@ -27,22 +27,22 @@ import UnTag from './UnTag.vue'
 .good-list-card {
   display: flex;
   padding: 10rpx 20rpx;
-  height: 220rpx;
   width: 100%;
-  box-sizing: border-box;
+  height: 220rpx;
   background: #fff;
+  box-sizing: border-box;
   .good-img {
-    flex-shrink: 0;
-    height: 200rpx;
     width: 200rpx;
-    border-radius: $radius-base;
+    height: 200rpx;
     background: #f5f5f5;
+    border-radius: $radius-base;
+    flex-shrink: 0;
   }
   .good-info {
-    margin-left: 10rpx;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    margin-left: 10rpx;
+    flex-direction: column;
     .good-text {
       display: -webkit-box;
       word-break: break-all;
@@ -64,8 +64,8 @@ import UnTag from './UnTag.vue'
     .origin-price {
       margin-left: 5rpx;
       font-size: 24rpx;
-      color: #999;
       text-decoration: line-through;
+      color: #999;
     }
   }
 }

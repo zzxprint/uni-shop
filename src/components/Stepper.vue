@@ -32,29 +32,29 @@ const plusValue = () => {
 <style lang="scss" scoped>
 .stepper {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 40rpx;
+  align-items: center;
   width: auto;
+  height: 40rpx;
   .minus-btn,
   .plus-btn {
     padding: 0;
+    margin: 0;
     width: 50rpx;
     height: 40rpx;
-    line-height: 40rpx;
-    margin: 0;
     background: #fff;
+    line-height: 40rpx;
     &::after {
       border: none;
     }
   }
   .step-input {
-    height: 40rpx;
     width: 60rpx;
-    background: #eee;
+    height: 40rpx;
+    min-height: 40rpx;
     font-size: 24rpx;
     text-align: center;
-    min-height: 40rpx;
+    background: #eee;
   }
 }
 </style>

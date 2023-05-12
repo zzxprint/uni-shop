@@ -51,23 +51,23 @@ const props = defineProps({
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80rpx;
     width: 100%;
+    height: 80rpx;
     line-height: 80rpx;
     border-bottom: 1px solid #f5f5f5;
   }
   .un-cell-label {
-    color: $font-color-light;
     font-size: $font-size-base;
+    color: $font-color-light;
   }
   .un-cell-content {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    overflow: hidden;
     height: 100%;
     font-size: $font-size-base;
     text-align: right;
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     .un-cell-placeholder {

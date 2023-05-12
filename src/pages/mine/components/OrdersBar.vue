@@ -31,22 +31,22 @@ import ClassificationButton from '@/components/ClassificationButton.vue'
 
 <style lang="scss" scoped>
 .orders-bar {
-  margin-top: 30rpx;
   padding: 0 $padding-base;
+  margin-top: 30rpx;
   width: 100%;
   height: 180rpx;
   box-sizing: border-box;
   .orders-bar-pad {
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    height: 100%;
-    border-radius: $radius-base;
-    background: #fff;
+    align-items: center;
     overflow: hidden;
+    height: 100%;
+    background: #fff;
+    border-radius: $radius-base;
     .all-orders {
-      display: flex;
       position: relative;
+      display: flex;
       width: 136rpx;
       &::before {
         position: absolute;

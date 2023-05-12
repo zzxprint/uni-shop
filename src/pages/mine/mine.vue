@@ -38,10 +38,10 @@ onPullDownRefresh(() => {
   padding: 0 $padding-base;
   box-sizing: border-box;
   .user-avatar {
-    height: 100rpx;
     width: 100rpx;
-    border-radius: 50%;
+    height: 100rpx;
     background: #eee;
+    border-radius: 50%;
   }
   .user-name {
     margin-left: 20rpx;

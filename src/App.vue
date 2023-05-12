@@ -18,8 +18,8 @@ onHide(() => {
 <style lang="scss">
 @import '@/static/icon/iconfont.css';
 page {
-  background: $background-color;
   font-size: 30rpx;
   color: #333;
+  background: $background-color;
 }
 </style>

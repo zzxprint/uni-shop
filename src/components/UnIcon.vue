@@ -31,5 +31,3 @@ const props = defineProps({
 })
 const emit = defineEmits(['click'])
 </script>
-
-<style lang="scss" scoped></style>

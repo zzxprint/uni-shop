@@ -32,8 +32,8 @@ const toEditAddress = () => {
 
 <style lang="scss" scoped>
 .address {
-  padding: 0 $padding-base;
   overflow: hidden;
+  padding: 0 $padding-base;
 }
 .add-btn {
   width: 100%;

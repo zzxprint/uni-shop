@@ -33,7 +33,7 @@ const searchClick = () => {
 .search-container {
   display: flex;
   align-items: center;
-  padding: 20rpx 0 10rpx 0;
+  padding: 20rpx 0 10rpx;
   background: #fff;
   .search-input {
     display: flex;
@@ -42,27 +42,27 @@ const searchClick = () => {
     margin-left: 20rpx;
     width: 100%;
     height: 65rpx;
-    border-radius: 65rpx;
     background: $background-color;
+    border-radius: 65rpx;
     .input {
-      width: 100%;
       margin-left: 20rpx;
+      width: 100%;
       font-size: 28rpx;
     }
     .delete-icon {
       display: flex;
-      align-items: center;
       justify-content: center;
-      height: 100%;
+      align-items: center;
       width: 50rpx;
+      height: 100%;
     }
   }
   .search-text {
-    flex-shrink: 0;
     padding: 0 15rpx;
     width: 80rpx;
-    text-align: center;
     height: 65rpx;
+    text-align: center;
+    flex-shrink: 0;
     line-height: 65rpx;
   }
 }

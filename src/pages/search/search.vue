@@ -28,5 +28,3 @@ const search = () => {
   console.log('搜索', searchText.value)
 }
 </script>
-
-<style lang="scss" scoped></style>

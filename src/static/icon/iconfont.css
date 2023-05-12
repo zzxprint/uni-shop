@@ -4,7 +4,6 @@
     url('iconfont.woff?t=1676898995502') format('woff'),
     url('iconfont.ttf?t=1676898995502') format('truetype');
 }
-
 .iconfont {
   font-size: 16px;
   font-family: iconfont, sans-serif !important;
@@ -12,83 +11,63 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-arrow::before {
   content: '\e665';
 }
-
 .icon-edit::before {
   content: '\e646';
 }
-
 .icon-delete::before {
   content: '\e60a';
 }
-
 .icon-tick::before {
   content: '\e786';
 }
-
 .icon-service::before {
   content: '\ec2e';
 }
-
 .icon-car::before {
   content: '\e602';
 }
-
 .icon-refund::before {
   content: '\e619';
 }
-
 .icon-wallet::before {
   content: '\e611';
 }
-
 .icon-position::before {
   content: '\e67e';
 }
-
 .icon-person::before {
   content: '\e62c';
 }
-
 .icon-order::before {
   content: '\e645';
 }
-
 .icon-finish-order::before {
   content: '\e60f';
 }
-
 .icon-setting::before {
   content: '\e647';
 }
-
 .icon-plus::before {
   content: '\e64d';
 }
-
 .icon-search::before {
   content: '\e669';
 }
-
 .icon-minus::before {
   content: '\e643';
 }
-
 .icon-home::before {
   content: '\e627';
 }
-
 .icon-mine::before {
   content: '\e600';
 }
-
 .icon-shoping-cart::before {
   content: '\e73d';
 }
-
 .icon-classification::before {
   content: '\e638';
 }

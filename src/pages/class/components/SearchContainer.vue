@@ -32,8 +32,8 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .search-container {
-  width: 100%;
   padding: 10rpx 30rpx;
+  width: 100%;
   background: #fff;
   box-sizing: border-box;
 }

@@ -27,5 +27,3 @@ const getBottomHeight = (height: number, paddingBottom: number) => {
   bottomPadding.value = `${paddingBottom}px`
 }
 </script>
-
-<style lang="scss" scoped></style>

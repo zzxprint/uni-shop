@@ -20,7 +20,7 @@ const emit = defineEmits(['choose'])
 
 <style lang="scss" scoped>
 .search-tips {
-  padding: 40rpx 20rpx 0 20rpx;
+  padding: 40rpx 20rpx 0;
   .title {
     font-weight: bold;
   }
@@ -29,13 +29,13 @@ const emit = defineEmits(['choose'])
     flex-wrap: wrap;
     padding: 20rpx 0;
     .tips-tag {
-      height: 50rpx;
-      line-height: 50rpx;
       padding: 0 20rpx;
       margin: 10rpx;
+      height: 50rpx;
       font-size: 28rpx;
       background: #e5e5e5;
       border-radius: 25rpx;
+      line-height: 50rpx;
     }
   }
 }

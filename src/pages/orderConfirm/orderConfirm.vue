@@ -21,10 +21,10 @@ import UnButton from '@/components/UnButton.vue'
 
 <style lang="scss" scoped>
 .pay-btn-container {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   .pay-btn {
     width: 200rpx;
   }

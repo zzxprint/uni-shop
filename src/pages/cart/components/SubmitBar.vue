@@ -34,17 +34,17 @@ const toOrderConfirm = () => {
   display: flex;
   justify-content: space-between;
   padding: 0 $padding-base;
-  height: 120rpx;
   width: 100%;
+  height: 120rpx;
+  background: #fff;
   border-top: 2rpx solid #f8f8f8;
   box-sizing: border-box;
-  background: #fff;
   .select-container {
-    flex-shrink: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100%;
+    flex-shrink: 0;
   }
   .operation-container {
     display: flex;
@@ -54,10 +54,10 @@ const toOrderConfirm = () => {
       margin-right: 20rpx;
     }
     .submit-btn {
-      height: 90rpx;
-      line-height: 90rpx;
       width: 240rpx;
+      height: 90rpx;
       border-radius: $radius-lg;
+      line-height: 90rpx;
       &::after {
         border: none;
       }
