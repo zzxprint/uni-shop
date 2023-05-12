@@ -1,33 +1,34 @@
 <template>
-  <div
-    class="goods-action"
-    :style="{ paddingBottom: props.paddingBottom + 'px' }"
+  <!-- 小程序不支持$attrs写法 -->
+  <UnBottomBar
+    @getHeight="(height: number, paddingBottom: number) =>
+    emit('getHeight', height, paddingBottom)"
   >
-    <div class="cart-button" @click="toShopingCart">
-      <Icon icon="shoping-cart" size="50rpx" />
-      <span>购物车</span>
+    <div class="goods-action">
+      <div class="cart-button" @click="toShopingCart">
+        <UnIcon icon="shoping-cart" size="50rpx" />
+        <span>购物车</span>
+      </div>
+      <div class="order-button-container">
+        <button class="order-button left" hover-class="hover-normal">
+          <span class="un-button-text"> 加入购物车 </span>
+        </button>
+        <button class="order-button right" hover-class="hover-normal">
+          <span class="un-button-text"> 立即购买 </span>
+        </button>
+      </div>
     </div>
-    <div class="order-button-container">
-      <button class="order-button left" hover-class="hover-normal">
-        <span class="un-button-text"> 加入购物车 </span>
-      </button>
-      <button class="order-button right" hover-class="hover-normal">
-        <span class="un-button-text"> 立即购买 </span>
-      </button>
-    </div>
-  </div>
+  </UnBottomBar>
 </template>
 
 <script setup lang="ts">
-import Icon from '@/components/Icon.vue'
+import UnBottomBar from '@/components/UnBottomBar.vue'
+import UnIcon from '@/components/UnIcon.vue'
 
-const props = defineProps({
-  paddingBottom: Number
-})
+const emit = defineEmits(['getHeight'])
 
 // 去购物车
 const toShopingCart = () => {
-  console.log('aaa')
   uni.switchTab({
     url: '/pages/cart/cart'
   })
@@ -39,12 +40,7 @@ const toShopingCart = () => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
-  bottom: 0;
-  height: 120rpx;
-  padding: 0 30rpx;
-  width: calc(100% - 60rpx);
-  background: #fff;
+  width: 100%;
   .cart-button {
     display: flex;
     flex-direction: column;

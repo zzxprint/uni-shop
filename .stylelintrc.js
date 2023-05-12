@@ -1,31 +1,18 @@
 module.exports = {
   extends: [
-    'stylelint-config-standard',
-    'stylelint-config-prettier',
-    'stylelint-config-recommended-less',
-    'stylelint-config-standard-vue'
+    'stylelint-config-standard', // 配置 stylelint 拓展插件
+    'stylelint-config-html/vue', // 配置 vue 中 template 样式格式化
+    'stylelint-config-standard-scss', // 配置 stylelint scss 插件
+    'stylelint-config-recommended-vue/scss' // 配置 vue 中 scss 样式格式化
   ],
-  plugins: ['stylelint-order'],
-  // 不同格式的文件指定自定义语法
+  plugins: ['stylelint-order'], // 配置书写顺序插件
   overrides: [
-    {
-      files: ['**/*.(less|css|vue|html)'],
-      customSyntax: 'postcss-less'
-    },
     {
       files: ['**/*.(html|vue)'],
       customSyntax: 'postcss-html'
     }
   ],
-  ignoreFiles: [
-    '**/*.js',
-    '**/*.jsx',
-    '**/*.tsx',
-    '**/*.ts',
-    '**/*.json',
-    '**/*.md',
-    '**/*.yaml'
-  ],
+  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.tsx', '**/*.ts', '**/*.json', '**/*.md', '**/*.yaml'],
   rules: {
     'no-descending-specificity': null, // 禁止在具有较高优先级的选择器后出现被其覆盖的较低优先级的选择器
     'selector-pseudo-element-no-unknown': [
@@ -40,12 +27,14 @@ module.exports = {
         ignorePseudoClasses: ['deep']
       }
     ],
+    // 解决小程序中定义page出错
     'selector-type-no-unknown': [
       true,
       {
         ignoreTypes: ['page']
       }
     ],
+    // 解决小程序中定义rpx出错
     'unit-no-unknown': [
       true,
       {

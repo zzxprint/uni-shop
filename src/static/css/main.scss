@@ -1,6 +1,7 @@
 // 主题色
 $main-color: #fbc02d;
-$succsee-color: #73c97b;
+$success-color: #73c97b;
+$important-color: #ed1010;
 
 // 背景色
 $background-color: #f5f5f5;
@@ -20,6 +21,9 @@ $font-size-hg: 38rpx;
 $radius-sm: 10rpx;
 $radius-base: 20rpx;
 $radius-lg: 40rpx;
+
+// 盒子间距
+$padding-base: 30rpx;
 
 // 触摸样式
 .hover-normal {

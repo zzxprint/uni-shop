@@ -22,7 +22,7 @@ import ClassificationButton from '@/components/ClassificationButton.vue'
 <style lang="scss" scoped>
 .class-bar {
   margin-top: 20rpx;
-  padding: 0 30rpx;
+  padding: 0 $padding-base;
   width: 100%;
   height: 320rpx;
   box-sizing: border-box;

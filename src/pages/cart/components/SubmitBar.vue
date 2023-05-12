@@ -11,7 +11,7 @@
         <span>￥99</span>
       </div>
       <!-- 结算按钮 -->
-      <UnButton class="submit-btn">结算</UnButton>
+      <UnButton class="submit-btn" @click="toOrderConfirm">结算</UnButton>
     </div>
   </div>
 </template>
@@ -19,6 +19,12 @@
 <script setup lang="ts">
 import CheckBox from '@/components/CheckBox.vue'
 import UnButton from '@/components/UnButton.vue'
+
+const toOrderConfirm = () => {
+  uni.navigateTo({
+    url: '/pages/orderConfirm/orderConfirm'
+  })
+}
 </script>
 
 <style lang="scss" scoped>
@@ -27,7 +33,7 @@ import UnButton from '@/components/UnButton.vue'
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 30rpx;
+  padding: 0 $padding-base;
   height: 120rpx;
   width: 100%;
   border-top: 2rpx solid #f8f8f8;

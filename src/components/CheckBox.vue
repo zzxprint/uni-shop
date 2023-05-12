@@ -1,11 +1,11 @@
 <template>
   <div class="check-box" :class="{ selected: modelValue }" @click="toggle">
-    <Icon v-show="modelValue" icon="tick" size="28rpx" color="#fff" />
+    <UnIcon v-show="modelValue" icon="tick" size="28rpx" color="#fff" />
   </div>
 </template>
 
 <script setup lang="ts">
-import Icon from './Icon.vue'
+import UnIcon from './UnIcon.vue'
 const props = defineProps({
   modelValue: {
     type: [Boolean, String],

@@ -34,9 +34,7 @@
             (l.style.height = 0),
             (l.style.overflow = 'hidden'),
             (l = l),
-            (c = document.body).firstChild
-              ? h(l, c.firstChild)
-              : c.appendChild(l))
+            (c = document.body).firstChild ? h(l, c.firstChild) : c.appendChild(l))
       }),
         document.addEventListener
           ? ~['complete', 'loaded', 'interactive'].indexOf(document.readyState)

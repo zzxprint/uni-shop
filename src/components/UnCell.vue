@@ -11,11 +11,9 @@
       </div>
       <div class="un-cell-content">
         <slot></slot>
-        <span class="un-cell-placeholder" v-if="value === ''">{{
-          placeholder
-        }}</span>
+        <span class="un-cell-placeholder" v-if="value === ''">{{ props.placeholder }}</span>
         <span class="un-cell-value">{{ value }}</span>
-        <Icon
+        <UnIcon
           class="un-cell-icon"
           v-if="isLink"
           icon="arrow"
@@ -29,8 +27,7 @@
 </template>
 
 <script setup lang="ts">
-import type { placeholder } from '@babel/types'
-import Icon from './Icon.vue'
+import UnIcon from './UnIcon.vue'
 const props = defineProps({
   label: String,
   value: String,

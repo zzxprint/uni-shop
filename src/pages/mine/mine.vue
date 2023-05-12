@@ -35,7 +35,7 @@ onPullDownRefresh(() => {
 .user-info {
   display: flex;
   align-items: center;
-  padding: 0 30rpx;
+  padding: 0 $padding-base;
   box-sizing: border-box;
   .user-avatar {
     height: 100rpx;

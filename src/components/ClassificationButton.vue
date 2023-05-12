@@ -1,7 +1,7 @@
 <template>
   <div class="class-button">
     <div class="class-img">
-      <Icon v-if="icon" :icon="icon" :color="iconColor" size="60rpx" />
+      <UnIcon v-if="icon" :icon="icon" :color="iconColor" size="60rpx" />
       <div v-else class="fake-img"></div>
     </div>
     <div class="class-text">{{ props.text }}</div>
@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import Icon from './Icon.vue'
+import UnIcon from './UnIcon.vue'
 const props = defineProps({
   text: String,
   width: {

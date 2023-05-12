@@ -3,11 +3,7 @@
     class="search-container"
     :style="{ paddingTop: searchPaddingTop, paddingRight: searchPaddingRight }"
   >
-    <FakeSearchInput
-      placeholder="搜索商品"
-      :height="searchHeight"
-      :hide-btton="true"
-    />
+    <FakeSearchInput placeholder="搜索商品" :height="searchHeight" :hide-btton="true" />
   </div>
 </template>
 

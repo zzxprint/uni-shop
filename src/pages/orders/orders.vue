@@ -34,6 +34,6 @@ onLoad(option => {
 
 <style lang="scss" scoped>
 .orders-container {
-  padding: 30rpx;
+  padding: $padding-base;
 }
 </style>

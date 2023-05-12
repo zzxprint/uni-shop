@@ -4,15 +4,13 @@
     <div class="order-base">
       <div class="order-img"></div>
       <div class="order-info">
-        <div class="order-text">
-          商品名称-商品名称扩写，文字超出范围怎么显示
-        </div>
+        <div class="order-text">商品名称-商品名称扩写，文字超出范围怎么显示</div>
       </div>
       <div class="order-count">共2件</div>
     </div>
     <!-- 订单状态、付款信息 -->
     <div class="order-state">
-      <Tag text="已完成" color="#73c97b" />
+      <UnTag text="已完成" color="#73c97b" />
       <div class="order-payment">
         实付款<span class="small">￥</span>99.<span class="small">00</span>
       </div>
@@ -21,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import Tag from '@/components/Tag.vue'
+import UnTag from '@/components/UnTag.vue'
 </script>
 
 <style lang="scss" scoped>

@@ -7,7 +7,7 @@
     }"
     @click="toSearchPage"
   >
-    <Icon icon="search" size="40rpx" color="#fbc02d" />
+    <UnIcon icon="search" size="40rpx" color="#fbc02d" />
     <span class="place-holder">{{ placeholder }}</span>
     <div
       v-show="!hideBtton"
@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import Icon from '@/components/Icon.vue'
+import UnIcon from '@/components/UnIcon.vue'
 
 const props = defineProps({
   placeholder: {
@@ -64,7 +64,7 @@ const toSearchPage = () => {
     width: 100%;
     padding-left: 10rpx;
     text-align: left;
-    font-size: 26rpx;
+    font-size: $font-size-sm;
     color: #999;
   }
   .search-btn {
@@ -72,9 +72,9 @@ const toSearchPage = () => {
     top: -4rpx;
     right: -4rpx;
     flex-shrink: 0;
-    padding: 0 30rpx;
+    padding: 0 $padding-base;
     width: auto;
-    font-size: 28rpx;
+    font-size: $font-size-base;
     color: #666;
     background: $main-color;
   }

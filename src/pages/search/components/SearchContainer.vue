@@ -9,12 +9,10 @@
         placeholder="搜索商品"
         type="text"
         :value="props.modelValue"
-        @input="
-          emit('update:modelValue', ($event.target as HTMLInputElement).value)
-        "
+        @input="emit('update:modelValue', ($event.target as HTMLInputElement).value)"
       />
       <div class="delete-icon" @click="emit('update:modelValue', '')">
-        <Icon v-show="props.modelValue" icon="delete" color="#999" />
+        <UnIcon v-show="props.modelValue" icon="delete" color="#999" />
       </div>
     </div>
     <span class="search-text" @click="searchClick">搜索</span>
@@ -22,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import Icon from '@/components/Icon.vue'
+import UnIcon from '@/components/UnIcon.vue'
 const props = defineProps(['modelValue'])
 const emit = defineEmits(['update:modelValue', 'search'])
 

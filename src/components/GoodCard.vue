@@ -7,7 +7,7 @@
     <div class="good-info">
       <div class="good-text">
         <!-- 标签 -->
-        <Tag text="标签" />
+        <UnTag text="标签" />
         商品名称-商品名称扩写，文字超出范围
       </div>
     </div>
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import Tag from './Tag.vue'
+import UnTag from './UnTag.vue'
 
 // 去往商品详情
 const gotoDetail = () => {

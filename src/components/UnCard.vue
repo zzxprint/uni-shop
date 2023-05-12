@@ -1,16 +1,17 @@
 <template>
-  <div class="un-card">
+  <div class="un-card" @click="emit('click')">
     <div class="un-card-container">
       <slot></slot>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const emit = defineEmits(['click'])
+</script>
 
 <style lang="scss" scoped>
 .un-card {
-  padding: 0 30rpx;
   margin: 20rpx 0;
   width: 100%;
   height: auto;

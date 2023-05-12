@@ -58,7 +58,7 @@ onPullDownRefresh(() => {
   }
 }
 .hot-container {
-  padding: 30rpx;
+  padding: $padding-base;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

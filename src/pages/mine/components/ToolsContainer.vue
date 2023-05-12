@@ -9,12 +9,7 @@
         width="230rpx"
       />
       <navigator class="tool-btn" url="/pages/address/address">
-        <ClassificationButton
-          text="收货地址"
-          icon="position"
-          icon-color="#fbc02d"
-          width="230rpx"
-        />
+        <ClassificationButton text="收货地址" icon="position" icon-color="#fbc02d" width="230rpx" />
       </navigator>
       <ClassificationButton
         class="tool-btn"
@@ -41,7 +36,7 @@ import ClassificationButton from '@/components/ClassificationButton.vue'
 <style lang="scss" scoped>
 .tools-container {
   margin-top: 30rpx;
-  padding: 0 30rpx;
+  padding: 0 $padding-base;
   .tools-pad {
     display: flex;
     flex-wrap: wrap;

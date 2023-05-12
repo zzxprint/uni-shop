@@ -7,7 +7,7 @@
     <div class="good-info">
       <div class="good-text">
         <!-- 标签 -->
-        <Tag text="标签" />
+        <UnTag text="标签" />
         商品名称-商品名称扩写，文字超出范围怎么显示
       </div>
       <!-- 商品价格 -->
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import Tag from './Tag.vue'
+import UnTag from './UnTag.vue'
 </script>
 
 <style lang="scss" scoped>

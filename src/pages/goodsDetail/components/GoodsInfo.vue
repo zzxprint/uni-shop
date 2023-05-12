@@ -6,9 +6,7 @@
       <span class="initial-price">￥199</span>
     </div>
     <div class="goods-info">
-      <div class="goods-title">
-        商品名称商品名称商品名称商品名称商品名称商品名称
-      </div>
+      <div class="goods-title">商品名称商品名称商品名称商品名称商品名称商品名称</div>
       <div class="goods-detail">商品简介商品简介商品简介商品简介商品简介</div>
     </div>
   </div>
@@ -18,7 +16,7 @@
 
 <style lang="scss" scoped>
 .goods-info-container {
-  padding: 30rpx;
+  padding: $padding-base;
   background: #fff;
   .goods-price {
     font-size: 44rpx;

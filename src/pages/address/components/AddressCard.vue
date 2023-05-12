@@ -2,19 +2,17 @@
   <div class="address-card">
     <div class="address-info">
       <div class="user-info">
-        <span class="user-name">张大千</span>
+        <span class="user-name">蜘蛛侠</span>
         157****0057
       </div>
-      <div class="address-detail">
-        浙江省 杭州市 滨江区 浦沿街道联庄公寓8幢2单元501
-      </div>
+      <div class="address-detail">浙江省 杭州市 滨江区 浦沿街道XX小区X幢X单元X</div>
     </div>
-    <Icon icon="edit" size="38rpx" color="#666" @click="toEditAddressPage" />
+    <UnIcon icon="edit" size="38rpx" color="#666" @click="toEditAddressPage" />
   </div>
 </template>
 
 <script setup lang="ts">
-import Icon from '@/components/Icon.vue'
+import UnIcon from '@/components/UnIcon.vue'
 // 去往编辑页面
 const toEditAddressPage = () => {
   uni.navigateTo({
