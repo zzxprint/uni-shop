@@ -5,7 +5,7 @@
       color: fontColor,
       fontSize: props.size,
       backgroundColor: backgroundColor,
-      borderColor: backgroundColor,
+      borderColor: fontColor,
       borderRadius: round ? '20rpx' : '4rpx',
       padding: round ? '2rpx 8rpx' : '2rpx 4rpx'
     }"

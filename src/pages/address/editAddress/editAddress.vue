@@ -1,5 +1,5 @@
 <template>
-  <UnContainer style="padding-top: 0">
+  <UnContainer bindStyle="padding-top: 0">
     <!-- 收货信息 -->
     <UnCard>
       <UnCell label="收货人">

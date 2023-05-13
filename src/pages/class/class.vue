@@ -3,7 +3,7 @@
   <SearchContainer @getHeight="setClassHeight" />
   <div class="classification" :style="{ height: classHieght }">
     <!-- 分类列表 -->
-    <SideBar v-model="activeClass" :list="classList" />
+    <UnSideBar v-model="activeClass" :list="classList" />
     <!-- 商品列表 -->
     <GoodsContainer />
   </div>
@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import SearchContainer from './components/SearchContainer.vue'
-import SideBar from '@/components/SideBar.vue'
+import UnSideBar from '@/components/UnSideBar.vue'
 import GoodsContainer from './components/GoodsContainer.vue'
 import { onPullDownRefresh } from '@dcloudio/uni-app'
 import { ref } from 'vue'

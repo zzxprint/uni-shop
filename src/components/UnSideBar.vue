@@ -1,8 +1,7 @@
 <template>
-  <scroll-view class="side-bar" scroll-y>
+  <scroll-view class="un-side-bar" scroll-y>
     <div
-      class="side-bar-item"
-      hover-class="hover-normal"
+      class="un-side-bar-item"
       v-for="item in props.list"
       :key="item.value"
       :class="{ active: modelValue === item.value }"
@@ -30,12 +29,12 @@ const emit = defineEmits<Emit>()
 </script>
 
 <style lang="scss" scoped>
-.side-bar {
+.un-side-bar {
   min-width: 180rpx;
   height: 100%;
   background: #fff;
   flex: 0;
-  .side-bar-item {
+  .un-side-bar-item {
     position: relative;
     padding-left: 20rpx;
     height: 100rpx;
