@@ -2,6 +2,9 @@
   <div class="class-button">
     <div class="class-img">
       <UnIcon v-if="icon" :icon="icon" :color="iconColor" size="60rpx" />
+      <div v-else-if="img" class="url-img">
+        <img class="img" :src="img" />
+      </div>
       <div v-else class="fake-img"></div>
     </div>
     <div class="class-text">{{ props.text }}</div>
@@ -20,6 +23,9 @@ const props = defineProps({
     type: String
   },
   iconColor: {
+    type: String
+  },
+  img: {
     type: String
   }
 })
@@ -42,10 +48,15 @@ const props = defineProps({
     width: 90rpx;
     height: 90rpx;
     border-radius: $radius-base;
-    .fake-img {
+    .fake-img,
+    .url-img {
       width: 100%;
       height: 100%;
       background: #eee;
+      .img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   .class-text {

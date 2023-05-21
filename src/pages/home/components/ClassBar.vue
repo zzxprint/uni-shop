@@ -1,22 +1,23 @@
 <template>
   <div class="class-bar">
     <div class="class-bar-pad">
-      <ClassificationButton text="文字" width="130rpx" />
-      <ClassificationButton text="文字" width="130rpx" />
-      <ClassificationButton text="文字" width="130rpx" />
-      <ClassificationButton text="文字" width="130rpx" />
-      <ClassificationButton text="文字" width="130rpx" />
-      <ClassificationButton text="文字" width="130rpx" />
-      <ClassificationButton text="文字" width="130rpx" />
-      <ClassificationButton text="文字" width="130rpx" />
-      <ClassificationButton text="文字" width="130rpx" />
-      <ClassificationButton text="文字" width="130rpx" />
+      <div class="class-bar-container" v-for="(item, index) in classList" :key="index">
+        <UnClassButton :text="item.className" :img="item.classIcon" width="130rpx" />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import ClassificationButton from '@/components/ClassificationButton.vue'
+import { ref } from 'vue'
+import UnClassButton from '@/components/UnClassButton.vue'
+import type { ResClassList } from '@/api/interface/index'
+import { getClassListApi } from '@/api/classList'
+
+const classList = ref<ResClassList[]>()
+getClassListApi().then(res => {
+  classList.value = res.data
+})
 </script>
 
 <style lang="scss" scoped>
@@ -27,14 +28,19 @@ import ClassificationButton from '@/components/ClassificationButton.vue'
   height: 320rpx;
   box-sizing: border-box;
   .class-bar-pad {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    width: 100%;
     height: 100%;
     background: #fff;
     border-radius: $radius-base;
     box-shadow: 2rpx 2rpx 10rpx #f5f5f5;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+    .class-bar-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 </style>

@@ -23,15 +23,19 @@ const setClassHeight = (height: string) => {
 }
 
 // 获取分类列表信息
-const classList = [
-  { label: '分类名称1', value: 'class1' },
-  { label: '分类名称2', value: 'class2' },
-  { label: '分类名称3', value: 'class3' },
-  { label: '分类名称4', value: 'class4' }
-]
+import { getClassListApi } from '@/api/classList'
 
-// 当前激活的分类
-const activeClass = ref('class1')
+const classList = ref()
+const activeClass = ref('')
+getClassListApi().then(res => {
+  classList.value = res.data.map(e => {
+    return {
+      label: e.className,
+      value: e.id
+    }
+  })
+  activeClass.value = classList.value[0].value
+})
 
 // 下拉刷新
 onPullDownRefresh(() => {

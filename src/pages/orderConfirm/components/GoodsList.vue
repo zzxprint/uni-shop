@@ -65,11 +65,11 @@ import UnCard from '@/components/UnCard.vue'
     }
   }
   .goods-price {
-    margin-left: 20rpx;
     display: flex;
-    flex-direction: column;
     align-items: flex-end;
+    margin-left: 20rpx;
     height: 200rpx;
+    flex-direction: column;
     .final-price {
       font-size: $font-size-hg;
       .price-symbol {

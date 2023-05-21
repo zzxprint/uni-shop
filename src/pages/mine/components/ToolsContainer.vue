@@ -1,7 +1,7 @@
 <template>
   <div class="tools-container">
     <div class="tools-pad">
-      <ClassificationButton
+      <UnClassButton
         class="tool-btn"
         text="个人信息"
         icon="person"
@@ -9,16 +9,16 @@
         width="230rpx"
       />
       <navigator class="tool-btn" url="/pages/address/address">
-        <ClassificationButton text="收货地址" icon="position" icon-color="#fbc02d" width="230rpx" />
+        <UnClassButton text="收货地址" icon="position" icon-color="#fbc02d" width="230rpx" />
       </navigator>
-      <ClassificationButton
+      <UnClassButton
         class="tool-btn"
         text="客服中心"
         icon="service"
         icon-color="#fbc02d"
         width="230rpx"
       />
-      <ClassificationButton
+      <UnClassButton
         class="tool-btn"
         text="设置"
         icon="setting"
@@ -30,7 +30,7 @@
 </template>
 
 <script setup lang="ts">
-import ClassificationButton from '@/components/ClassificationButton.vue'
+import UnClassButton from '@/components/UnClassButton.vue'
 </script>
 
 <style lang="scss" scoped>
