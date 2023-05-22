@@ -1,5 +1,5 @@
 <template>
-  <div class="class-button">
+  <div class="class-button" @click="emit('click')">
     <div class="class-img">
       <UnIcon v-if="icon" :icon="icon" :color="iconColor" size="60rpx" />
       <div v-else-if="img" class="url-img">
@@ -29,6 +29,8 @@ const props = defineProps({
     type: String
   }
 })
+
+const emit = defineEmits(['click'])
 </script>
 
 <style lang="scss" scoped>

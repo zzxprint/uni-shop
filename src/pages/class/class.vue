@@ -13,8 +13,10 @@
 import SearchContainer from './components/SearchContainer.vue'
 import UnSideBar from '@/components/UnSideBar.vue'
 import GoodsContainer from './components/GoodsContainer.vue'
-import { onPullDownRefresh } from '@dcloudio/uni-app'
+import { onPullDownRefresh, onShow } from '@dcloudio/uni-app'
 import { ref } from 'vue'
+import { getClassListApi } from '@/api/classList'
+import { useStorageStore } from '@/store/storage'
 
 // 获取分类容器高度
 const classHieght = ref('100%')
@@ -22,9 +24,7 @@ const setClassHeight = (height: string) => {
   classHieght.value = height
 }
 
-// 获取分类列表信息
-import { getClassListApi } from '@/api/classList'
-
+// 获取分类列表信息，自动选中分类
 const classList = ref()
 const activeClass = ref('')
 getClassListApi().then(res => {
@@ -35,6 +35,20 @@ getClassListApi().then(res => {
     }
   })
   activeClass.value = classList.value[0].value
+  setActiveClass()
+})
+
+const setActiveClass = () => {
+  const storageStore = useStorageStore()
+  const choosedId = storageStore.choosedClassIdGet
+  if (choosedId) {
+    activeClass.value = choosedId
+  }
+  storageStore.clearChoosedClassId()
+}
+
+onShow(() => {
+  setActiveClass()
 })
 
 // 下拉刷新

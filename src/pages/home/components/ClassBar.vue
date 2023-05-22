@@ -2,7 +2,12 @@
   <div class="class-bar">
     <div class="class-bar-pad">
       <div class="class-bar-container" v-for="(item, index) in classList" :key="index">
-        <UnClassButton :text="item.className" :img="item.classIcon" width="130rpx" />
+        <UnClassButton
+          width="130rpx"
+          :text="item.className"
+          :img="item.classIcon"
+          @click="toPageClass(item.id)"
+        />
       </div>
     </div>
   </div>
@@ -13,11 +18,20 @@ import { ref } from 'vue'
 import UnClassButton from '@/components/UnClassButton.vue'
 import type { ResClassList } from '@/api/interface/index'
 import { getClassListApi } from '@/api/classList'
+import { useStorageStore } from '@/store/storage'
 
 const classList = ref<ResClassList[]>()
 getClassListApi().then(res => {
   classList.value = res.data
 })
+
+const toPageClass = (classId: string) => {
+  const storageStore = useStorageStore()
+  storageStore.setChoosedClassId(classId)
+  uni.switchTab({
+    url: '/pages/class/class'
+  })
+}
 </script>
 
 <style lang="scss" scoped>
