@@ -27,6 +27,7 @@ const setClassHeight = (height: string) => {
 // 获取分类列表信息，自动选中分类
 const classList = ref()
 const activeClass = ref('')
+const storageStore = useStorageStore()
 getClassListApi().then(res => {
   classList.value = res.data.map(e => {
     return {
@@ -34,12 +35,13 @@ getClassListApi().then(res => {
       value: e.id
     }
   })
-  activeClass.value = classList.value[0].value
+  if (activeClass.value === '') {
+    storageStore.setChoosedClassId(classList.value[0].value)
+  }
   setActiveClass()
 })
 
 const setActiveClass = () => {
-  const storageStore = useStorageStore()
   const choosedId = storageStore.choosedClassIdGet
   if (choosedId) {
     activeClass.value = choosedId
