@@ -10,19 +10,13 @@
   <!-- 分类 -->
   <ClassBar />
   <!-- 热门推荐 -->
-  <div class="hot-container">
-    <GoodCard class="good-card" />
-    <GoodCard class="good-card" />
-    <GoodCard class="good-card" />
-    <GoodCard class="good-card" />
-    <GoodCard class="good-card" />
-  </div>
+  <HotRecommend />
 </template>
 
 <script setup lang="ts">
 import FakeSearchInput from '@/components/FakeSearchInput.vue'
-import GoodCard from '@/components/GoodCard.vue'
 import ClassBar from '@/pages/home/components/ClassBar.vue'
+import HotRecommend from './components/HotRecommend.vue'
 import { ref, onMounted } from 'vue'
 import { onPullDownRefresh } from '@dcloudio/uni-app'
 
@@ -55,16 +49,6 @@ onPullDownRefresh(() => {
     display: flex;
     align-items: center;
     margin-bottom: 10rpx;
-  }
-}
-.hot-container {
-  display: flex;
-  justify-content: space-between;
-  padding: $padding-base;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  .good-card {
-    margin-bottom: 30rpx;
   }
 }
 </style>

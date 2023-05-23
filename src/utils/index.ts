@@ -11,3 +11,7 @@ export const px2rpx = (px: number) => {
   const screenWidth = systemInfo.screenWidthGet || 0
   return (750 * px) / screenWidth
 }
+
+export const formatPrice = (price: number) => {
+  return (price / 100).toFixed(2)
+}

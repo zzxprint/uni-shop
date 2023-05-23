@@ -1,4 +1,4 @@
-import { get, post } from '@/api'
+import { get } from '@/api'
 import type { ResClassList } from './interface'
 
 // 获取分类列表
