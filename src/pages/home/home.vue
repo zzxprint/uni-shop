@@ -2,8 +2,7 @@
   <!-- Logo及搜索按钮 -->
   <div class="search-container" :style="{ paddingTop: searchPaddingTop }">
     <div class="logo-container" :style="{ height: logoHeight }">
-      Logo
-      <div class="iconfont icon-home"></div>
+      <img class="logo" src="@/static/logo.png" />
     </div>
     <FakeSearchInput />
   </div>
@@ -49,6 +48,10 @@ onPullDownRefresh(() => {
     display: flex;
     align-items: center;
     margin-bottom: 10rpx;
+    .logo {
+      height: 50rpx;
+      width: 50rpx;
+    }
   }
 }
 </style>

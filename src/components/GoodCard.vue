@@ -64,14 +64,14 @@ const gotoDetail = () => {
   border-radius: $radius-base;
   box-sizing: border-box;
   .good-img {
+    overflow: hidden;
     width: 330rpx;
     height: 330rpx;
     background: #eee;
     border-radius: $radius-base $radius-base 0 0;
-    overflow: hidden;
     .img {
-      height: 100%;
       width: 100%;
+      height: 100%;
     }
   }
   .good-info {
@@ -88,9 +88,9 @@ const gotoDetail = () => {
   .good-price {
     padding: 0 20rpx 20rpx;
     .final-price {
+      font-size: $font-size-base;
       color: red;
       font-weight: 500;
-      font-size: $font-size-base;
       .currency-unit {
         font-size: $font-size-tiny;
       }
